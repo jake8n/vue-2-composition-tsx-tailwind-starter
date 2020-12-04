@@ -23,7 +23,7 @@ export default defineComponent({
         {this.posts && this.posts.length ? (
           <div class="flex flex-col">
             {(this.posts || []).map((post) => (
-              <article class="bg-white mb-4 px-6 py-4 rounded-lg shadow">
+              <article class="mb-4 px-6 py-4 bg-white rounded-lg shadow">
                 <p class="text-xl">{post.status}</p>
               </article>
             ))}
@@ -31,7 +31,7 @@ export default defineComponent({
         ) : (
           <div
             slot="loading"
-            class="bg-white p-8 animate-pulse rounded-lg"
+            class="p-8 bg-white rounded-lg animate-pulse"
           ></div>
         )}
       </div>

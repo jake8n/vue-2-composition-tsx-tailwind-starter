@@ -14,7 +14,7 @@ export default defineComponent({
     return (
       <button
         onClick={() => this.click()}
-        class="bg-blue-600 text-white px-5 py-3 rounded-full uppercase font-bold"
+        class="px-5 py-3 text-white font-bold bg-blue-600 rounded-full uppercase"
       >
         {(this.$scopedSlots.default as NormalizedScopedSlot)(this.$props)}
       </button>
